@@ -1,0 +1,684 @@
+@use "main"
+@use "variables"
+@use "glide_core"
+@use "glide_theme"
+
+//Generales
+
+.container
+  margin-inline: auto
+  max-width: 1000px
+  padding: 1rem
+
+.container-titulo
+  margin-inline: auto
+  max-width: 1000px
+  justify-content: center
+  display: flex
+  margin-bottom: 0
+
+.image
+  display: block
+  width: 100%
+  object-fit: cover
+  object-position: center
+
+img
+  width: 100%
+  object-fit: cover
+  object-position: center
+
+
+.link
+  display: inline-block
+  color: inherit
+  text-decoration: none
+
+.bold
+  font-weight: bold
+  margin-top: 0.5rem
+
+.button
+  min-width: 1.5rem
+  box-sizing: border-box
+  width: max-content
+  display: inline-flex
+  align-items: center
+  padding: 5px 10px
+  background-color: darkslateblue
+  color: white
+  text-align: center
+  text-decoration: none
+  border-radius: 4px
+  border: none
+  cursor: pointer
+  font-size: 16px
+  box-shadow: 0 0 5px transparentize(black, .5)
+
+//Tipografias
+
+h1
+  font-size: 2.5rem
+  font-family: "Roboto Light"
+
+h2
+  font-size: 2.3rem
+  font-family: "Roboto Thin"
+
+h3
+  font-size: 1.8rem
+  font-family: "Roboto Medium"
+  margin: 1rem 0 0 0
+
+.h4
+  font-size: 1.8rem
+  font-family: "Roboto Thin"
+  margin: 1rem 0 0 0
+
+p
+  font-size: 1rem
+  font-family: "Roboto"
+
+//Header
+
+.mobile-header
+  display: none
+
+.desktop-header
+  display: block
+
+
+.header
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  background: darkslateblue
+  z-index: 3
+  border-bottom: 2px solid black
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__brand-link
+    width: 6rem
+  &__button
+    display: none
+  .nav
+    &__ul
+      display: flex
+      list-style: none
+    &__link
+      text-decoration: none
+      color: main.$color__texto
+      display: inline-block
+      padding: main.$gap--m
+      font-size: 2rem
+      font-family: "Roboto Thin"
+      &:hover
+        border-bottom: 2px solid black
+.submenu
+  display: none
+  position: absolute
+  background-color: white
+  padding: 10px
+  width: 158px
+  list-style: none
+  font-family: "Roboto Light"
+
+.nav__item--submenu:hover .submenu
+  display: block
+
+.submenu__item
+  margin: 5px 0
+
+.submenu__link
+  text-decoration: none
+  color: #333
+
+//Redes Sociales
+
+.container-rrss
+  background-color: white
+  height: 100%
+  display: flex
+  max-width: 1000px
+  padding: 10rem 0 0 14rem
+  justify-content: right
+  text-align: right
+  z-index: 4
+
+
+.ul-rrss
+  list-style: none
+  padding: 0
+  display: inline-block
+  margin: 0 1px
+
+.li-rrss
+  display: inline
+  margin-right: 10px
+
+.rrss
+  width: 2rem
+  aspect-ratio: 1
+  transition: opacity 0.3s ease
+
+.rrss:hover
+  opacity: 0.5
+
+//Noticia del día
+
+.container-dia
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-template-rows: repeat(3, auto)
+  grid-template-areas: "title image" "description image" "link image"
+  gap: variables.$gap__xl
+  border-top: 2px double black
+  border-bottom: 2px double black
+  padding: 10px 10px 20px 10px
+
+.hgroup-dia
+  grid-area: title
+.title-dia
+  margin-bottom: 0
+  font-size: variables.$gap__xl
+.description-dia
+  grid-area: description
+  margin-top: 0
+  margin-bottom: 0
+.link-dia
+  grid-area: link
+.image-dia
+  grid-area: image
+  padding-top: 1.3rem
+.text-blue
+  color: darkslateblue
+
+//Ultima hora
+
+.cases
+  &__hgroup
+    margin-bottom: variables.$gap__xl
+    padding-block: variables.$gap__xxl
+  &__title
+    margin-bottom: 0
+    font-size: variables.$gap__xxl
+    text-align: center
+    color: darkslateblue
+  &__subtitle
+    font-size: variables.$gap__m
+    text-align: center
+    padding-bottom: variables.$gap__m
+
+  &__items
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: variables.$gap__xxl
+
+.cases-item
+  border-radius: variables.$gap__m
+  box-shadow: 0 0 1rem variables.$color__shadow
+  transition: .5s
+  &:hover
+    transform: scale(1.1)
+
+  &__cover
+    height: 14rem
+    border-top-left-radius: variables.$gap__m
+    border-top-right-radius: variables.$gap__m
+  &__hgroup
+    padding: variables.$gap__m
+  &__title
+    margin-bottom: 0
+  &__summary
+    margin-top: variables.$gap__s
+    min-height: variables.$gap__xl
+  &__link
+    display: block
+
+.ultima-hora
+  display: flex
+  align-items: center
+  text-align: center
+  margin-top: 0
+
+.circulo
+  align-items: center
+  width: 20px
+  height: 20px
+  border-radius: 50%
+  background-color: red
+  margin-top: 20px
+  margin-right: 10px
+  animation: sonar 1s infinite
+
+.container-circulo
+  display: flex
+  justify-content: center
+  align-items: center
+
+@keyframes sonar
+  0%
+    transform: scale(0.1)
+    opacity: 0.5
+  50%
+    transform: scale(0.5)
+    opacity: 0.8
+  100%
+    transform: scale(1)
+    opacity: 0
+
+//Bloque noticias
+
+.bloque_noticias
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-template-rows: 1fr 1fr
+  width: 100%
+  gap: 1rem
+  padding: 1rem
+  box-sizing: border-box
+
+.noticia1
+  grid-column: 1 / 2
+  grid-row: 1 / 2
+  align-self: center
+  aspect-ratio: 1
+
+.placa
+  width: 100%
+  margin: 0
+
+.placa1
+  width: 100%
+  border-bottom: 1px solid darkslateblue
+  margin: 0
+
+.placa2
+  width: 100%
+  margin: 0
+
+.autor
+  width: auto
+  padding: 10px
+  font-family: Roboto-Thin
+  background-color: darkslateblue
+  color: white
+
+.noticia2
+  grid-column: 2 / 3
+  grid-row: 1 / 2
+  align-self: center
+  aspect-ratio: 1
+
+.noticia3
+  grid-column: 1 / 2
+  grid-row: 2 / 3
+  align-self: center
+  aspect-ratio: 1
+
+.noticia4
+  grid-column: 2 / 3
+  grid-row: 2 / 3
+  align-self: center
+  aspect-ratio: 1
+
+.guion
+  border-left: 25px solid darkslateblue
+  padding: 1rem
+  line-height: 15px
+
+.guion2
+  border-left: 25px solid darkgray
+  padding: 1rem
+  line-height: 15px
+
+#load-more-btn
+  margin-top: 10px
+  padding: 8px 16px
+  background-color: darkslateblue
+  color: white
+  border: none
+  border-radius: 4px
+  cursor: pointer
+
+#load-more-btn:hover
+  background-color: black
+  color: white
+
+.hidden
+  display: none
+
+#load-less-btn
+  margin-top: 10px
+  padding: 8px 16px
+  background-color: darkslateblue
+  color: white
+  border: none
+  border-radius: 4px
+  cursor: pointer
+
+#load-less-btn:hover
+  background-color: black
+  color: white
+
+//Podcast
+
+.podcast1
+  display: grid
+  grid-template-columns: 1fr 2fr
+  grid-template-rows: repeat(3, auto)
+  width: 100%
+  gap: 1rem
+  padding: 1rem
+  box-sizing: border-box
+  background-color: darkslateblue
+  border: 1px solid black
+
+.podcast__avatar
+  grid-column: 1 / 2
+  grid-row: 1 / 5
+  align-self: center
+  aspect-ratio: 1
+  border: 1px solid black
+
+.podcast__nombre
+  grid-column: 2 / 3
+  grid-row: 1 / 2
+  margin: 0
+  color: white
+  overflow-wrap: break-word
+
+.podcast__autor
+  grid-column: 2 / 3
+  grid-row: 3 / 4
+  margin: 0
+  color: white
+
+.podcast__entrada
+  grid-column: 2 / 3
+  grid-row: 2 / 3
+  margin: 0
+  color: white
+
+.podcast__audio
+  width: 100%
+  grid-column: 2 / 3
+  grid-row: 4 / 5
+  margin: 0
+  padding-bottom: 7px
+
+.podcast2
+  display: grid
+  grid-template-columns: 1fr 2fr
+  grid-template-rows: repeat(3, auto)
+  width: 100%
+  gap: 1rem
+  padding: 1rem
+  box-sizing: border-box
+  background-color: gray
+  border: 1px solid black
+
+//Carrusel Glide
+
+.glide
+  position: relative
+  width: 100%
+  -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+.glide *
+  -webkit-box-sizing: inherit
+    box-sizing: inherit
+.glide__track
+  overflow: hidden
+
+.glide__slides
+  position: relative
+  width: 100%
+  list-style: none
+  -webkit-backface-visibility: hidden
+    backface-visibility: hidden
+  -webkit-transform-style: preserve-3d
+    transform-style: preserve-3d
+  -ms-touch-action: pan-Y
+    touch-action: pan-Y
+  overflow: hidden
+  margin: 0
+  padding: 0
+  white-space: nowrap
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-wrap: nowrap
+    flex-wrap: nowrap
+  will-change: transform
+
+.glide__slides--dragging
+  -webkit-user-select: none
+    -moz-user-select: none
+      -ms-user-select: none
+        user-select: none
+
+
+.glide__slide
+  width: 100%
+  height: 100%
+  -ms-flex-negative: 0
+    flex-shrink: 0
+  white-space: normal
+  -webkit-user-select: none
+    -moz-user-select: none
+      -ms-user-select: none
+        user-select: none
+  -webkit-touch-callout: none
+  -webkit-tap-highlight-color: transparent
+
+.glide__slide a
+  -webkit-user-select: none
+    user-select: none
+  -webkit-user-drag: none
+  -moz-user-select: none
+  -ms-user-select: none
+
+
+.glide__arrows
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+    -moz-user-select: none
+      -ms-user-select: none
+        user-select: none
+
+.glide__bullets
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+    -moz-user-select: none
+      -ms-user-select: none
+        user-select: none
+
+.glide--rtl
+  direction: rtl
+
+
+.glide__arrow
+  position: absolute
+  display: block
+  top: 50%
+  z-index: 2
+  color: white
+  text-transform: uppercase
+  padding: 9px 12px
+  background-color: transparent
+  border: 2px solid rgba(255, 255, 255, 0.5)
+  border-radius: 4px
+  -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1)
+  text-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1)
+  opacity: 1
+  cursor: pointer
+  -webkit-transition: opacity 150ms ease, border 300ms ease-in-out
+  transition: opacity 150ms ease, border 300ms ease-in-out
+  -webkit-transform: translateY(-50%)
+    transform: translateY(-50%)
+  line-height: 1
+
+
+.glide__arrow:focus
+  outline: none
+
+.glide__arrow:hover
+  border-color: white
+
+.glide__arrow--left
+  left: 2rem
+
+
+.glide__arrow--right
+  right: 2rem
+
+
+.glide__arrow--disabled
+  opacity: 0.33
+
+
+.glide__bullets
+  position: absolute
+  z-index: 2
+  bottom: 2em
+  left: 50%
+  display: -webkit-inline-box
+  display: -ms-inline-flexbox
+  display: inline-flex
+  list-style: none
+  -webkit-transform: translateX(-50%)
+    transform: translateX(-50%)
+
+
+.glide__bullet
+  background-color: rgba(255, 255, 255, 0.5)
+  width: 9px
+  height: 9px
+  padding: 0
+  border-radius: 50%
+  border: 2px solid transparent
+  -webkit-transition: all 300ms ease-in-out
+  transition: all 300ms ease-in-out
+  cursor: pointer
+  line-height: 0
+  -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1)
+  margin: 0 0.25em
+
+
+.glide__bullet:focus
+  outline: none
+
+
+.glide__bullet:hover, .glide__bullet:focus
+  border: 2px solid white
+  background-color: rgba(255, 255, 255, 0.5)
+
+
+.glide__bullet--active
+  background-color: white
+
+.glide--swipeable
+  cursor: grab
+  cursor: -webkit-grab
+
+.glide--dragging
+  cursor: grabbing
+  cursor: -webkit-grabbing
+
+//TheScout
+
+.TheScout
+  display: grid
+  grid-template-columns: 1fr 1fr
+  width: 100%
+  gap: 1rem
+  padding: 1rem
+  box-sizing: border-box
+
+.Quienes_Somos
+  grid-column: 1 / 2
+  background-color: darkgray
+  padding: 1rem
+  text-align: center
+  font-family: Roboto
+  border: 1px solid black
+
+.titulo_quienes_somos
+  text-align: center
+
+.formulario
+  grid-column: 2 / 3
+  background-color: darkslateblue
+  padding: 1rem
+  text-align: center
+  font-family: Roboto
+  border: 1px solid black
+
+.titulo_formulario
+  color: white
+  text-align: center
+
+.formulario2
+  color: white
+  text-align: left
+  padding: 1rem
+  height: 100%
+
+//Footer
+.container-footer
+  background-color: darkgray
+  display: flex
+  max-width: 1000px
+  padding: 0.2rem
+  justify-content: center
+  align-items: center
+
+.container-titulo-rrss
+  background-color: white
+  height: 100%
+  display: flex
+  max-width: 1000px
+  padding: 0.5rem
+  justify-content: center
+  align-items: center
+
+.footer
+  background-color: darkgray
+  height: 100%
+  display: flex
+  max-width: 1000px
+  padding: 0.5rem 0.2rem 0.2rem 0.2rem
+  justify-content: center
+  align-items: center
+
+.footer-content
+  max-width: 960px
+  margin: 0 auto
+
+.footer-links
+  list-style: none
+  padding: 0
+  margin-top: 10px
+
+.footer-links li
+  display: inline-block
+  margin-right: 10px
+
+.footer p
+  margin: 0
+  text-align: center
+
+.footer-links a
+  text-decoration: none
+  color: #333
+
+
+
+

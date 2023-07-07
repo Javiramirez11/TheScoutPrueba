@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>The Scout</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!--SwiperJS-->
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!--Fin SwiperJS-->
+    <link
+            rel="icon"
+            type="image/webp"
+            href="img/logo.webp"
+    >
+    <link
+            rel="apple-touch-icon"
+            href="touch-icon-iphone.png"
+    >
+    <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="/static/img/apple-touch-icon/touch-icon-ipad.png"
+    >
+    <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/static/img/apple-touch-icon/touch-icon-iphone-retina.png"
+    >
+    <link
+            rel="apple-touch-icon"
+            sizes="167x167"
+            href="/static/img/apple-touch-icon/touch-icon-ipad-retina.png"
+    >
+    <meta
+            name="theme-color"
+            content="#3c790a"
+    >
+    <meta
+            name="theme-color"
+            content="#ecd96f"
+            media="(prefers-color-scheme: light)"
+    >
+    <meta
+            name="theme-color"
+            content="#0b3e05"
+            media="(prefers-color-scheme: dark)"
+    >
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    >
+    <meta
+            name="author"
+            content="Tu nombre"
+    >
+    <meta
+            name="generator"
+            content="Clojure"
+    >
+    <meta
+            name="keywords"
+            content="html, css, javascript"
+    >
+    <meta
+            name="description"
+            content="my description..."
+    >
+    <meta
+            property="og:image"
+            content="img/screenshot.png"
+    >
+    <meta
+            property="og:title"
+            content="The Rock"
+    >
+    <meta
+            property="og:type"
+            content="website"
+    >
+    <meta
+            property="og:url"
+            content=""
+    >
+    <meta
+            name="twitter:card"
+            content="summary"
+    >
+    <meta
+            name="twitter:site"
+            content="@cuenta"
+    >
+    <meta
+            name="twitter:creator"
+            content="@cuenta"
+    >
+    <meta
+            property="og:image:secure_url"
+            content="https://..."
+    >
+    <meta
+            property="og:image:type"
+            content="image/jpeg"
+    >
+    <meta
+            property="og:image:width"
+            content="400"
+    >
+    <meta
+            property="og:image:height"
+            content="300"
+    >
+    <meta
+            property="og:image:alt"
+            content=""
+    >
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    >
+    <!--Glide carrusel -->
+    <link
+            rel="stylesheet"
+            href="css/estilos.css"
+    >
+
+    <link
+            rel="stylesheet"
+            href="css/estilo_opcional.css"
+    >
+
+    <!-- Required Core Stylesheet -->
+
+
+    <!--End Glide carrusel -->
+    <!--Split media -->
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/main.css"
+    >
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/mobile.css"
+            media="all and (max-width: 600px)"
+    >
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/desktop.css"
+            media="all and (min-width: 600px)"
+    <link
+            rel="stylesheet"
+            type="text/sass"
+            href="sass/mobile.sass"
+            media="all and (max-width: 600px)"
+    >
+
+
+    <!--End split media -->
+    <script src="js/glide.js"></script>
+    <script src="js/main.js" defer></script>
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <!-- End JavaScript -->
+  </head>
+  <body>
+  <header class="header desktop-header" x-data="{ open: false }">
+    <div class="container">
+      <a href="#" class="header__brand-link">
+        <img class="image header__brand" alt="Logo" src="img/LogoWeb.webp">
+      </a>
+      <nav class="nav" :class="open ? 'nav--show' : ''">
+        <ul class="nav__ul">
+          <li class="nav__item">
+            <a class="nav__link" href="#Scouting">Scouting</a>
+          </li>
+          <li class="nav__item nav__item--submenu">
+            <a class="nav__link" href="#Redaccion">Redacción</a>
+            <ul class="submenu">
+              <li class="submenu__item">
+                <a class="submenu__link" href="#Articulos">Artículos</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#Reportajes">Reportajes</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#Infografias">Infografía</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#Opinion">Opinión</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#Analisis">Análisis</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#Entrevistas">Entrevistas</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#Fotogaleria">Fotogalería</a>
+              </li>
+            </ul>
+          <li class="nav__item">
+            <a class="nav__link" href="#Podcast">Podcast</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#TheScout">TheScout</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <header class="header mobile-header">
+      <div class="container">
+          <a href="#" class="link header__link">
+              <img class="image header__logo" src="img/LogoWeb.webp" alt="Logo" class="header__logo">
+          </a>
+          <nav class="nav">
+              <ul class="ul-reset nav__ul">
+                  <li class="nav__item"><a href="#" class="nav__link">Scouting</a></li>
+                  <li class="nav__item nav__item--submenu">
+                      <a href="#" class="nav__link">Redacción</a>
+                  </li>
+                  <ul class="submenu">
+                      <li class="submenu__item">
+                          <a class="submenu__link" href="#Articulos">Artículos</a>
+                      </li>
+                      <li class="submenu__item">
+                          <a class="submenu__link" href="#Reportajes">Reportajes</a>
+                      </li>
+                      <li class="submenu__item">
+                          <a class="submenu__link" href="#Infografias">Infografía</a>
+                      </li>
+                      <li class="submenu__item">
+                          <a class="submenu__link" href="#Opinion">Opinión</a>
+                      </li>
+                      <li class="submenu__item">
+                          <a class="submenu__link" href="#Analisis">Análisis</a>
+                      </li>
+                      <li class="submenu__item">
+                          <a class="submenu__link" href="#Entrevistas">Entrevistas</a>
+                      </li>
+                      <li class="submenu__item">
+                          <a class="submenu__link" href="#Fotogaleria">Fotogalería</a>
+                      </li>
+                  </ul>
+                  <li class="nav__item"><a href="#" class="nav__link">Podcast</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link ">TheScout</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+  <section class="container-rrss">
+      <nav>
+          <ul class="ul-rrss">
+              <li class="li-rrss">
+                  <a href="https://www.facebook.com/" target="_blank">
+                      <img class="rrss" alt="Facebook" src="img/LogoFacebook.webp">
+                  </a>
+              </li>
+          </ul>
+          <ul class="ul-rrss">
+              <li class="li-rrss">
+                  <a href="https://twitter.com/home" target="_blank">
+                      <img class="rrss" alt="Twitter" src="img/LogoTwitter.webp">
+                  </a>
+              </li>
+          </ul>
+          <ul class="ul-rrss">
+              <li class="li-rrss">
+                  <a href="https://www.youtube.com/" target="_blank">
+                      <img class="rrss" alt="Youtube" src="img/LogoYoutube.webp">
+                  </a>
+              </li>
+          </ul>
+          <ul class="ul-rrss">
+              <li class="li-rrss">
+                  <a href="https://www.instagram.com/" target="_blank">
+                      <img class="rrss" alt="Instagram" src="img/LogoInstagram.webp">
+                  </a>
+              </li>
+          </ul>
+          <ul class="ul-rrss">
+              <li class="li-rrss" >
+                  <a href="https://www.twitch.tv/" target="_blank">
+                      <img class="rrss" alt="Twitch" src="img/LogoTwitch.webp">
+                  </a>
+              </li>
+          </ul>
+          <ul class="ul-rrss">
+              <li class="li-rrss">
+                  <a href="https://www.tiktok.com/es/" target="_blank">
+                      <img class="rrss" alt="TikTok" src="img/LogoTiktok.webp">
+                  </a>
+              </li>
+          </ul>
+      </nav>
+  </section>
+      <section class="container-titulo">
+        <h1 id="Scouting">SCOUTING</h1>
+      </section>
+      <section class="container">
+        <h2 class="guion">NOTICIA DEL DIA</h2>
+      </section>
+  <section class="container">
+    <div class="container-dia">
+      <hgroup class="hgroup-dia">
+        <p class="bold">Redacción <span aria-hidden="true">/</span> <span class="text-blue">Artículos</span></p>
+        <h1 class="title-dia">Inter vs Milan, el romanticismo europeo</h1>
+      </hgroup>
+      <p class="description-dia">El partido más importante de la temporada se avecina con un Milan en baja forma últimamente, aunque superó a la Lazio por 2-0 el fin de semana, en un partido que exhibió la velocidad y el peligro en ataque de Theo Hernández.</p>
+      <a href="Pagina_noticia.html" class="link-dia button">Leer más</a>
+      <hgroup class="image-dia">
+        <figure class="placa">
+          <img class="placa2 image" src="img/milan.webp" alt="Savacion">
+          <figcaption class="autor">
+            Por Javier Ramírez
+          </figcaption>
+        </figure>
+      </hgroup>
+    </div>
+  </section>
+      <section class="cases">
+        <div class="container">
+          <hgroup>
+            <div class="container-circulo">
+              <div class="ultima-hora">
+                <div class="circulo"></div>
+                <h1 class="cases__title">Última hora</h1>
+            </div>
+        </div>
+            <p class="cases__subtitle bold">Enterate de todas las noticias del mundo del fútbol al minuto.</p>
+          </hgroup>
+          <div class="cases__items">
+            <article class="cases-item">
+              <a href="#" class="link cases-item__link">
+                <img src="img/Burgos.webp" alt="Burgos" class="cases-item__cover image">
+                <hgroup class="cases-item__hgroup">
+                  <h3 class="cases-item__title">Gran temporada del recién ascendido</h3>
+                  <p class="cases-item__sumary">Su solidez defensiva clave en la campaña de un Burgos que rozo el ascenso</p>
+                </hgroup>
+              </a>
+            </article>
+            <article class="cases-item">
+              <a href="#" class="link cases-item__link">
+                <img src="img/Fichaje.webp" alt="Fichaje" class="cases-item__cover image">
+                <hgroup class="cases-item__hgroup">
+                  <h3 class="cases-item__title">Un flamante fichaje para ilusionarse</h3>
+                  <p class="cases-item__sumary">La llegada de esta nueva incorporación replantea el objetivo del club y le hace mirar arriba</p>
+                </hgroup>
+              </a>
+            </article>
+            <article class="cases-item">
+              <a href="#" class="link cases-item__link">
+                <img src="img/Levante-Ibiza.webp" alt="Levante" class="cases-item__cover image">
+                <hgroup class="cases-item__hgroup">
+                  <h3 class="cases-item__title">Tropiezo que puede costar un ascenso</h3>
+                  <p class="cases-item__sumary">El empate ante un equipo ya descendido complica el ascenso directo y aparece la posibilidad de la lotería de los Play-Offs</p>
+                </hgroup>
+              </a>
+            </article>
+            <article class="cases-item">
+              <a href="#" class="link cases-item__link">
+                <img src="img/Napoles.webp" alt="Napoles" class="cases-item__cover image">
+                <hgroup class="cases-item__hgroup">
+                  <h3 class="cases-item__title">El Nápoles logra el Scudetto 33 años después</h3>
+                  <p class="cases-item__sumary">El equipo napolitano gana el título liguero tras dominar con mano de hierro el calcio italiano </p>
+                </hgroup>
+              </a>
+            </article>
+            <article class="cases-item">
+              <a href="#" class="link cases-item__link">
+                <img src="img/Newcastle.webp" alt="Newcastle" class="cases-item__cover image">
+                <hgroup class="cases-item__hgroup">
+                  <h3 class="cases-item__title">Un proyecto que ya es de Champions</h3>
+                  <p class="cases-item__sumary">La inyección económica saudita ya tiene su efecto, de una campaña pasada sufriendo a entrar en Champions en la presente temporada</p>
+                </hgroup>
+              </a>
+            </article>
+            <article class="cases-item">
+              <a href="#" class="link cases-item__link">
+                <img src="img/Racing.webp" alt="Racing" class="cases-item__cover image">
+                <hgroup class="cases-item__hgroup">
+                  <h3 class="cases-item__title">Un histórico que no levanta cabeza</h3>
+                  <p class="cases-item__sumary">El Racing de Santander, mítico equipo de la Primera división, sigue inmerso en su utopía por Segunda</p>
+                </hgroup>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="container-titulo">
+        <h1 id="Redaccion">REDACCIÓN</h1>
+      </section>
+      <section class="container">
+          <h2 id="Articulos" class="guion">ARTICULOS</h2>
+      </section>
+      <section class="container">
+        <section class="bloque_noticias">
+          <div class="noticia1">
+            <article>
+              <figure class="placa1">
+                <img class="placa2" src="img/Derbi.webp" alt="Savacion">
+                <figcaption class="autor">
+                  Por Javier Ramírez
+                </figcaption>
+              </figure>
+              <h3>Necesitan un milagro</h3>
+              <p>A 5 puntos de la salvación con tan solo 6 en juego necesitan ganarlo todo y que el resto no sume.</p>
+            </article>
+          </div>
+          <div class="noticia4">
+            <article>
+              <figure class="placa1">
+                <img class="placa2" src="img/Pep.webp" alt="Savacion">
+                <figcaption class="autor">
+                  Por Javier Ramírez
+                </figcaption>
+              </figure>
+              <h3>Necesitan un milagro</h3>
+              <p>A 5 puntos de la salvación con tan solo 6 en juego necesitan ganarlo todo y que el resto no sume.</p>
+            </article>
+          </div>
+          <div class="noticia2">
+            <article>
+              <figure class="placa1">
+                <img class="placa2" src="img/Racing.webp" alt="Salvacion">
+                <figcaption class="autor">
+                  Por Javier Ramírez
+                </figcaption>
+              </figure>
+              <h3>Una lucha bávara por la Bundelisga</h3>
+              <p>El Borussia Dortmund gana y mete presión al Bayern Múnich en la pelea por el título liguero. </p>
+            </article>
+          </div>
+          <div class="noticia3">
+            <article>
+              <figure class="placa1">
+                <img class="placa2" src="img/milan.webp" alt="Savacion">
+                <figcaption class="autor">
+                  Por Javier Ramírez
+                </figcaption>
+              </figure>
+              <h3>La locura se apodera de Nottingham</h3>
+              <p>Un gol en el 120’ le dan el ascenso tras unos play-offs agónicos en una temporada impecable. </p>
+            </article>
+          </div>
+        </section>
+        <section class="container-titulo">
+          <button id="load-more-btn">Cargar más</button>
+        </section>
+      </section>
+  <section class="container items">
+    <section class="bloque_noticias hidden">
+      <div class="noticia1">
+        <article>
+          <figure class="placa1">
+            <img class="placa2" src="img/Derbi.webp" alt="Savacion">
+            <figcaption class="autor">
+              Por Javier Ramírez
+            </figcaption>
+          </figure>
+          <h3>Necesitan un milagro</h3>
+          <p>A 5 puntos de la salvación con tan solo 6 en juego necesitan ganarlo todo y que el resto no sume.</p>
+        </article>
+      </div>
+      <div class="noticia4">
+        <article>
+          <figure class="placa1">
+            <img class="placa2" src="img/Pep.webp" alt="Savacion">
+            <figcaption class="autor">
+              Por Javier Ramírez
+            </figcaption>
+          </figure>
+          <h3>Necesitan un milagro</h3>
+          <p>A 5 puntos de la salvación con tan solo 6 en juego necesitan ganarlo todo y que el resto no sume.</p>
+        </article>
+      </div>
+      <div class="noticia2">
+        <article>
+          <figure class="placa1">
+            <img class="placa2" src="img/Racing.webp" alt="Salvacion">
+            <figcaption class="autor">
+              Por Javier Ramírez
+            </figcaption>
+          </figure>
+          <h3>Una lucha bávara por la Bundelisga</h3>
+          <p>El Borussia Dortmund gana y mete presión al Bayern Múnich en la pelea por el título liguero. </p>
+        </article>
+      </div>
+      <div class="noticia3">
+        <article>
+          <figure class="placa1">
+            <img class="placa2" src="img/milan.webp" alt="Savacion">
+            <figcaption class="autor">
+              Por Javier Ramírez
+            </figcaption>
+          </figure>
+          <h3>La locura se apodera de Nottingham</h3>
+          <p>Un gol en el 120’ le dan el ascenso tras unos play-offs agónicos en una temporada impecable. </p>
+        </article>
+      </div>
+    </section>
+  </section>
+  <section class="container">
+    <h2 id="Reportajes" class="guion2">REPORTAJES</h2>
+  </section>
+  <section class="container">
+    <section class="bloque_noticias">
+      <div class="noticia1">
+        <article>
+          <figure class="placa1">
+            <img class="placa2" src="img/Derbi.webp" alt="Savacion">
+            <figcaption class="autor">
+              Por Javier Ramírez
+            </figcaption>
+          </figure>
+          <h3>Necesitan un milagro</h3>
+          <p>A 5 puntos de la salvación con tan solo 6 en juego necesitan ganarlo todo y que el resto no sume.</p>
+        </article>
+      </div>
+      <div class="noticia4">
+        <article>
+          <figure class="placa1">
+            <img class="placa2" src="img/Pep.webp" alt="Savacion">
+            <figcaption class="autor">
+              Por Javier Ramírez
+            </figcaption>
+          </figure>
+          <h3>Necesitan un milagro</h3>
+          <p>A 5 puntos de la salvación con tan solo 6 en juego necesitan ganarlo todo y que el resto no sume.</p>
+        </article>
+      </div>
+      <div class="noticia2">
+        <article>
+          <figure class="placa1">
+            <img class="placa2" src="img/Racing.webp" alt="Salvacion">
+            <figcaption class="autor">
+              Por Javier Ramírez
+            </figcaption>
+          </figure>
+          <h3>Una lucha bávara por la Bundelisga</h3>
+          <p>El Borussia Dortmund gana y mete presión al Bayern Múnich en la pelea por el título liguero. </p>
+        </article>
+      </div>
+      <div class="noticia3">
+        <article>
+          <figure class="placa1">
+            <img class="placa2" src="img/milan.webp" alt="Savacion">
+            <figcaption class="autor">
+              Por Javier Ramírez
+            </figcaption>
+          </figure>
+          <h3>La locura se apodera de Nottingham</h3>
+          <p>Un gol en el 120’ le dan el ascenso tras unos play-offs agónicos en una temporada impecable. </p>
+        </article>
+      </div>
+    </section>
+  </section>
+  <section class="container">
+    <h2 id="Infografias" class="guion">INFOGRAFÍAS</h2>
+  </section>
+  <section class="container">
+    <section class="bloque_noticias">
+      <div class="noticia1">
+        <article>
+          <figure class="placa1">
+            <img class="placa2" src="img/Derbi.webp" alt="Savacion">
+            <figcaption class="autor">
+              Por Javier Ramírez
+            </figcaption>
+          </figure>
+          <h3>Necesitan un milagro</h3>
+          <p>A 5 puntos de la salvación con tan solo 6 en juego necesitan ganarlo todo y que el resto no sume.</p>
+        </article>
+      </div>
+      <div class="noticia4">
+        <article>
+          <figure class="placa1">
+            <img class="placa2" src="img/Pep.webp" alt="Savacion">
+            <figcaption class="autor">
+              Por Javier Ramírez
+            </figcaption>
+          </figure>
+          <h3>Necesitan un milagro</h3>
+          <p>A 5 puntos de la salvación con tan solo 6 en juego necesitan ganarlo todo y que el resto no sume.</p>
+        </article>
+      </div>
+      <div class="noticia2">
+        <article>
+          <figure class="placa1">
+            <img class="placa2" src="img/Racing.webp" alt="Salvacion">
+            <figcaption class="autor">
+              Por Javier Ramírez
+            </figcaption>
+          </figure>
+          <h3>Una lucha bávara por la Bundelisga</h3>
+          <p>El Borussia Dortmund gana y mete presión al Bayern Múnich en la pelea por el título liguero. </p>
+        </article>
+      </div>
+      <div class="noticia3">
+        <article>
+          <figure class="placa1">
+            <img class="placa2" src="img/milan.webp" alt="Savacion">
+            <figcaption class="autor">
+              Por Javier Ramírez
+            </figcaption>
+          </figure>
+          <h3>La locura se apodera de Nottingham</h3>
+          <p>Un gol en el 120’ le dan el ascenso tras unos play-offs agónicos en una temporada impecable. </p>
+        </article>
+      </div>
+    </section>
+  </section>
+  <section class="container">
+    <h2 id="Opinion" class="guion2">OPINIÓN</h2>
+    <section class="container">
+      <section class="bloque_noticias">
+        <div class="noticia1">
+          <article>
+            <figure class="placa1">
+              <img class="placa2" src="img/Derbi.webp" alt="Savacion">
+              <figcaption class="autor">
+                Por Javier Ramírez
+              </figcaption>
+            </figure>
+            <h3>Necesitan un milagro</h3>
+            <p>A 5 puntos de la salvación con tan solo 6 en juego necesitan ganarlo todo y que el resto no sume.</p>
+          </article>
+        </div>
+        <div class="noticia4">
+          <article>
+            <figure class="placa1">
+              <img class="placa2" src="img/Pep.webp" alt="Savacion">
+              <figcaption class="autor">
+                Por Javier Ramírez
+              </figcaption>
+            </figure>
+            <h3>Necesitan un milagro</h3>
+            <p>A 5 puntos de la salvación con tan solo 6 en juego necesitan ganarlo todo y que el resto no sume.</p>
+          </article>
+        </div>
+        <div class="noticia2">
+          <article>
+            <figure class="placa1">
+              <img class="placa2" src="img/Racing.webp" alt="Salvacion">
+              <figcaption class="autor">
+                Por Javier Ramírez
+              </figcaption>
+            </figure>
+            <h3>Una lucha bávara por la Bundelisga</h3>
+            <p>El Borussia Dortmund gana y mete presión al Bayern Múnich en la pelea por el título liguero. </p>
+          </article>
+        </div>
+        <div class="noticia3">
+          <article>
+            <figure class="placa1">
+              <img class="placa2" src="img/milan.webp" alt="Savacion">
+              <figcaption class="autor">
+                Por Javier Ramírez
+              </figcaption>
+            </figure>
+            <h3>La locura se apodera de Nottingham</h3>
+            <p>Un gol en el 120’ le dan el ascenso tras unos play-offs agónicos en una temporada impecable. </p>
+          </article>
+        </div>
+      </section>
+    </section>
+  <section class="container">
+    <h2 id="Analisis" class="guion">ANÁLISIS</h2>
+    <section class="container">
+      <section class="bloque_noticias">
+        <div class="noticia1">
+          <article>
+            <figure class="placa1">
+              <img class="placa2" src="img/Derbi.webp" alt="Savacion">
+              <figcaption class="autor">
+                Por Javier Ramírez
+              </figcaption>
+            </figure>
+            <h3>Necesitan un milagro</h3>
+            <p>A 5 puntos de la salvación con tan solo 6 en juego necesitan ganarlo todo y que el resto no sume.</p>
+          </article>
+        </div>
+        <div class="noticia4">
+          <article>
+            <figure class="placa1">
+              <img class="placa2" src="img/Pep.webp" alt="Savacion">
+              <figcaption class="autor">
+                Por Javier Ramírez
+              </figcaption>
+            </figure>
+            <h3>Necesitan un milagro</h3>
+            <p>A 5 puntos de la salvación con tan solo 6 en juego necesitan ganarlo todo y que el resto no sume.</p>
+          </article>
+        </div>
+        <div class="noticia2">
+          <article>
+            <figure class="placa1">
+              <img class="placa2" src="img/Racing.webp" alt="Salvacion">
+              <figcaption class="autor">
+                Por Javier Ramírez
+              </figcaption>
+            </figure>
+            <h3>Una lucha bávara por la Bundelisga</h3>
+            <p>El Borussia Dortmund gana y mete presión al Bayern Múnich en la pelea por el título liguero. </p>
+          </article>
+        </div>
+        <div class="noticia3">
+          <article>
+            <figure class="placa1">
+              <img class="placa2" src="img/milan.webp" alt="Savacion">
+              <figcaption class="autor">
+                Por Javier Ramírez
+              </figcaption>
+            </figure>
+            <h3>La locura se apodera de Nottingham</h3>
+            <p>Un gol en el 120’ le dan el ascenso tras unos play-offs agónicos en una temporada impecable. </p>
+          </article>
+        </div>
+      </section>
+    </section>
+  <section class="container">
+    <h2 id="Entrevistas" class="guion2">ENTREVISTAS</h2>
+  </section>
+    <section class="container">
+      <section class="bloque_noticias">
+        <div class="noticia1">
+          <article>
+            <figure class="placa1">
+              <img class="placa2" src="img/Derbi.webp" alt="Savacion">
+              <figcaption class="autor">
+                Por Javier Ramírez
+              </figcaption>
+            </figure>
+            <h3>Necesitan un milagro</h3>
+            <p>A 5 puntos de la salvación con tan solo 6 en juego necesitan ganarlo todo y que el resto no sume.</p>
+          </article>
+        </div>
+        <div class="noticia4">
+          <article>
+            <figure class="placa1">
+              <img class="placa2" src="img/Pep.webp" alt="Savacion">
+              <figcaption class="autor">
+                Por Javier Ramírez
+              </figcaption>
+            </figure>
+            <h3>Necesitan un milagro</h3>
+            <p>A 5 puntos de la salvación con tan solo 6 en juego necesitan ganarlo todo y que el resto no sume.</p>
+          </article>
+        </div>
+        <div class="noticia2">
+          <article>
+            <figure class="placa1">
+              <img class="placa2" src="img/Racing.webp" alt="Salvacion">
+              <figcaption class="autor">
+                Por Javier Ramírez
+              </figcaption>
+            </figure>
+            <h3>Una lucha bávara por la Bundelisga</h3>
+            <p>El Borussia Dortmund gana y mete presión al Bayern Múnich en la pelea por el título liguero. </p>
+          </article>
+        </div>
+        <div class="noticia3">
+          <article>
+            <figure class="placa1">
+              <img class="placa2" src="img/milan.webp" alt="Savacion">
+              <figcaption class="autor">
+                Por Javier Ramírez
+              </figcaption>
+            </figure>
+            <h3>La locura se apodera de Nottingham</h3>
+            <p>Un gol en el 120’ le dan el ascenso tras unos play-offs agónicos en una temporada impecable. </p>
+          </article>
+        </div>
+      </section>
+    </section>
+  <section class="container">
+    <h2 id="Fotogaleria" class="guion">FOTOGALERÍA</h2>
+  </section>
+    <section class="container">
+      <section class="bloque_noticias">
+        <div class="noticia1">
+          <article>
+            <figure class="placa1">
+              <img class="placa2" src="img/Derbi.webp" alt="Savacion">
+              <figcaption class="autor">
+                Por Javier Ramírez
+              </figcaption>
+            </figure>
+            <h3>Necesitan un milagro</h3>
+            <p>A 5 puntos de la salvación con tan solo 6 en juego necesitan ganarlo todo y que el resto no sume.</p>
+          </article>
+        </div>
+        <div class="noticia4">
+          <article>
+            <figure class="placa1">
+              <img class="placa2" src="img/Pep.webp" alt="Savacion">
+              <figcaption class="autor">
+                Por Javier Ramírez
+              </figcaption>
+            </figure>
+            <h3>Necesitan un milagro</h3>
+            <p>A 5 puntos de la salvación con tan solo 6 en juego necesitan ganarlo todo y que el resto no sume.</p>
+          </article>
+        </div>
+        <div class="noticia2">
+          <article>
+            <figure class="placa1">
+              <img class="placa2" src="img/Racing.webp" alt="Salvacion">
+              <figcaption class="autor">
+                Por Javier Ramírez
+              </figcaption>
+            </figure>
+            <h3>Una lucha bávara por la Bundelisga</h3>
+            <p>El Borussia Dortmund gana y mete presión al Bayern Múnich en la pelea por el título liguero. </p>
+          </article>
+        </div>
+        <div class="noticia3">
+          <article>
+            <figure class="placa1">
+              <img class="placa2" src="img/milan.webp" alt="Savacion">
+              <figcaption class="autor">
+                Por Javier Ramírez
+              </figcaption>
+            </figure>
+            <h3>La locura se apodera de Nottingham</h3>
+            <p>Un gol en el 120’ le dan el ascenso tras unos play-offs agónicos en una temporada impecable. </p>
+          </article>
+        </div>
+      </section>
+    </section>
+    <section class="container-titulo">
+      <h1 id="Podcast">PODCAST</h1>
+    </section>
+    <section class="container">
+      <article class="podcast1">
+        <img src="img/milan.webp" alt="milan" class=" imagen podcast__avatar">
+        <h3 class="podcast__nombre"><span class="h4">The Exploration #12 |</span> Inter vs Milan, el romanticismo europeo</h3>
+        <p class="podcast__autor">Por Javier Ramírez</p>
+        <p class="podcast__entrada">El partido más importante de la temporada se avecina con un Milan en baja forma últimamente, aunque superó a la Lazio por 2-0 el fin de semana, en un partido que exhibió la velocidad y el peligro en ataque de Theo Hernández. Al igual que contra el Nápoles en cuartos de final, los 'rossoneri' tendrán que jugar con sus puntos fuertes y las debilidades del Inter si quieren imponerse. Salir del partido de ida con un resultado igualado será clave para convertir la vuelta en casi una final.</p>
+        <audio class="podcast__audio"
+                controls
+                src="img/Audio-Tribuna-Deportiva-1.mp3"
+        >
+          <p>
+            <a href="img/Audio-Tribuna-Deportiva-1.mp3"></a>
+          </p>
+        </audio>
+      </article>
+    </section>
+  <section class="container">
+    <article class="podcast2">
+      <img src="img/Pep.webp" alt="milan" class=" imagen podcast__avatar">
+      <h3 class="podcast__nombre"><span class="h4">The Exploration #11 |</span> La fórmula Guardiola como sinónimo de éxito</h3>
+      <p class="podcast__autor">Por Javier Ramírez</p>
+      <p class="podcast__entrada">El partido más importante de la temporada se avecina con un Milan en baja forma últimamente, aunque superó a la Lazio por 2-0 el fin de semana, en un partido que exhibió la velocidad y el peligro en ataque de Theo Hernández. Al igual que contra el Nápoles en cuartos de final, los 'rossoneri' tendrán que jugar con sus puntos fuertes y las debilidades del Inter si quieren imponerse. Salir del partido de ida con un resultado igualado será clave para convertir la vuelta en casi una final.</p>
+      <audio class="podcast__audio"
+             controls
+             src="img/Audio-Tribuna-Deportiva-1.mp3"
+      >
+        <p>
+          Su navegador no soporta el formato del audio, pulse <a href="img/Audio-Tribuna-Deportiva-1.mp3">aquí</a> para descargarlo.
+        </p>
+      </audio>
+    </article>
+  </section>
+  <section class="container">
+    <article class="podcast1">
+      <img src="img/Newcastle.webp" alt="Newcastle" class=" imagen podcast__avatar">
+      <h3 class="podcast__nombre"><span class="h4">The Exploration #10 |</span> Proyecto Newcastle: Solo acaba de empezar</h3>
+      <p class="podcast__autor">Por Javier Ramírez</p>
+      <p class="podcast__entrada">El partido más importante de la temporada se avecina con un Milan en baja forma últimamente, aunque superó a la Lazio por 2-0 el fin de semana, en un partido que exhibió la velocidad y el peligro en ataque de Theo Hernández. Al igual que contra el Nápoles en cuartos de final, los 'rossoneri' tendrán que jugar con sus puntos fuertes y las debilidades del Inter si quieren imponerse. Salir del partido de ida con un resultado igualado será clave para convertir la vuelta en casi una final.</p>
+      <audio class="podcast__audio"
+             controls
+             src="img/Audio-Tribuna-Deportiva-1.mp3"
+      >
+        <p>
+          Su navegador no soporta el formato del audio, pulse <a href="img/Audio-Tribuna-Deportiva-1.mp3">aquí</a> para descargarlo.
+        </p>
+      </audio>
+    </article>
+  </section>
+  <section class="container">
+    <h2 class="guion">HEMEROTECA</h2>
+  </section>
+  <section class="container">
+    <div class="glide">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <section class="container">
+            <article class="podcast1">
+              <img src="img/milan.webp" alt="milan" class=" imagen podcast__avatar">
+              <h3 class="podcast__nombre"><span class="h4">The Exploration #12 |</span> Inter vs Milan, el romanticismo europeo</h3>
+              <p class="podcast__autor">Por Javier Ramírez</p>
+              <p class="podcast__entrada">El partido más importante de la temporada se avecina con un Milan en baja forma últimamente, aunque superó a la Lazio por 2-0 el fin de semana, en un partido que exhibió la velocidad y el peligro en ataque de Theo Hernández. Al igual que contra el Nápoles en cuartos de final, los 'rossoneri' tendrán que jugar con sus puntos fuertes y las debilidades del Inter si quieren imponerse. Salir del partido de ida con un resultado igualado será clave para convertir la vuelta en casi una final.</p>
+              <audio class="podcast__audio"
+                     controls
+                     src="img/Audio-Tribuna-Deportiva-1.mp3"
+              >
+                <p>
+                  <a href="img/Audio-Tribuna-Deportiva-1.mp3"></a>
+                </p>
+              </audio>
+            </article>
+          </section>
+          </li>
+          <li class="glide__slide">
+            <section class="container">
+            <article class="podcast2">
+              <img src="img/Pep.webp" alt="milan" class=" imagen podcast__avatar">
+              <h3 class="podcast__nombre"><span class="h4">The Exploration #11 |</span> La fórmula Guardiola como sinónimo de éxito</h3>
+              <p class="podcast__autor">Por Javier Ramírez</p>
+              <p class="podcast__entrada">El partido más importante de la temporada se avecina con un Milan en baja forma últimamente, aunque superó a la Lazio por 2-0 el fin de semana, en un partido que exhibió la velocidad y el peligro en ataque de Theo Hernández. Al igual que contra el Nápoles en cuartos de final, los 'rossoneri' tendrán que jugar con sus puntos fuertes y las debilidades del Inter si quieren imponerse. Salir del partido de ida con un resultado igualado será clave para convertir la vuelta en casi una final.</p>
+              <audio class="podcast__audio"
+                     controls
+                     src="img/Audio-Tribuna-Deportiva-1.mp3"
+              >
+                <p>
+                  Su navegador no soporta el formato del audio, pulse <a href="img/Audio-Tribuna-Deportiva-1.mp3">aquí</a> para descargarlo.
+                </p>
+              </audio>
+            </article>
+          </section>
+          </li>
+          <li class="glide__slide">
+            <section class="container">
+            <article class="podcast1">
+              <img src="img/Newcastle.webp" alt="Newcastle" class=" imagen podcast__avatar">
+              <h3 class="podcast__nombre"><span class="h4">The Exploration #10 |</span> Proyecto Newcastle: Solo acaba de empezar</h3>
+              <p class="podcast__autor">Por Javier Ramírez</p>
+              <p class="podcast__entrada">El partido más importante de la temporada se avecina con un Milan en baja forma últimamente, aunque superó a la Lazio por 2-0 el fin de semana, en un partido que exhibió la velocidad y el peligro en ataque de Theo Hernández. Al igual que contra el Nápoles en cuartos de final, los 'rossoneri' tendrán que jugar con sus puntos fuertes y las debilidades del Inter si quieren imponerse. Salir del partido de ida con un resultado igualado será clave para convertir la vuelta en casi una final.</p>
+              <audio class="podcast__audio"
+                     controls
+                     src="img/Audio-Tribuna-Deportiva-1.mp3"
+              >
+                <p>
+                  Su navegador no soporta el formato del audio, pulse <a href="img/Audio-Tribuna-Deportiva-1.mp3">aquí</a> para descargarlo.
+                </p>
+              </audio>
+            </article>
+          </section>
+          </li>
+        </ul>
+      </div>
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">◀</button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">▶</button>
+      </div>
+    </div>
+  </section>
+  <section class="container-titulo">
+    <h1 id="TheScout">THE SCOUT</h1>
+  </section>
+  <section class="container">
+    <section class="TheScout">
+      <div class="Quienes_Somos">
+        <article>
+          <h2 class="titulo_quienes_somos">¿QUIENÉS SOMOS?</h2>
+          <p>
+            Proyecto de medio digital especializado en el fútbol nacional e internacional, tratado desde las distintas plataformas multimedia, desde el contenido escrito hasta los podcast y directos pasando por el contenido gráfico.
+          </p>
+          <p>
+            Una de las esencias de este medio es apostar por un periodismo objetivo, riguroso y de calidad, intentando demostrar que el contenido deportivo no tiene por qué ser sensacionalista o amarillista.
+          </p>
+          <p>
+            The Scout es un medio hecho por y para su público, dando una gran importancia la opinión del mismo, retroalimentando el contenido con sugerencias y propuestas de la propia audiencia.
+          </p>
+          <p><strong>Redacción de The Scout</strong></p>
+        </article>
+      </div>
+      <div class="formulario">
+        <article>
+          <h2 class="titulo_formulario">FORMULARIO DE PROPUESTAS</h2>
+            <form class="formulario2">
+              <p>
+                <label>
+                  Nombre y apellidos:
+                  <input name="nombre" type="text" value="">
+                </label>
+              </p>
+              <p>
+                <label>
+                  Correo electrónico:
+                  <input name="email" type="email" value="">
+                </label>
+              </p>
+              <p>
+                <label>
+                  Número de teléfono:
+                  <input name="number" type="number" value="">
+                </label>
+              </p>
+              <p>
+                <label>
+                  Sugerencia de contenido:
+                  <textarea name="anotaciones"></textarea>
+                </label>
+              </p>
+              <p>
+                <button class="pulsador" type="reset">Resetear</button>
+                <button class="pulsador" type="submit">Enviar</button>
+              </p>
+            </form>
+        </article>
+      </div>
+    </section>
+  </section>
+    <section class="container-footer">
+      <p>¡SIGUENOS!</p>
+    </section>
+    <section class="container-titulo-rrss">
+      <nav>
+        <ul class="ul-rrss">
+          <li class="li-rrss">
+            <a href="https://www.facebook.com/" target="_blank">
+              <img class="rrss" alt="Facebook" src="img/LogoFacebook.webp">
+            </a>
+          </li>
+        </ul>
+        <ul class="ul-rrss">
+          <li class="li-rrss">
+            <a href="https://twitter.com/home" target="_blank">
+              <img class="rrss" alt="Twitter" src="img/LogoTwitter.webp">
+            </a>
+          </li>
+        </ul>
+        <ul class="ul-rrss">
+          <li class="li-rrss">
+            <a href="https://www.youtube.com/" target="_blank">
+              <img class="rrss" alt="Youtube" src="img/LogoYoutube.webp">
+            </a>
+          </li>
+        </ul>
+        <ul class="ul-rrss">
+          <li class="li-rrss">
+            <a href="https://www.instagram.com/" target="_blank">
+              <img class="rrss" alt="Instagram" src="img/LogoInstagram.webp">
+            </a>
+          </li>
+        </ul>
+        <ul class="ul-rrss">
+          <li class="li-rrss" >
+            <a href="https://www.twitch.tv/" target="_blank">
+              <img class="rrss" alt="Twitch" src="img/LogoTwitch.webp">
+            </a>
+          </li>
+        </ul>
+        <ul class="ul-rrss">
+          <li class="li-rrss">
+            <a href="https://www.tiktok.com/es/" target="_blank">
+              <img class="rrss" alt="TikTok" src="img/LogoTiktok.webp">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2023 The Scout. Todos los derechos reservados.</p>
+        <ul class="footer-links">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Aviso Legal</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Política de cookies</a></li>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("load-more-btn").addEventListener("click", function() {
+        var hiddenElements = document.querySelectorAll(".hidden");
+        for (var i = 0; i < hiddenElements.length; i++) {
+          hiddenElements[i].classList.remove("hidden");
+        }
+        this.style.display = "none"; // Ocultar el botón "Cargar más"
+        document.getElementById("load-less-btn").style.display = "inline-block"; // Mostrar el botón "Cargar menos"
+      });
+    </script>
+    <script>
+      document.getElementById("load-less-btn").addEventListener("click", function() {
+        var visibleElements = document.querySelectorAll("#content p:not(.hidden)");
+        for (var i = visibleElements.length - 1; i >= 5; i--) {
+          visibleElements[i].classList.add("hidden");
+        }
+        this.style.display = "none"; // Ocultar el botón "Cargar menos"
+        document.getElementById("load-more-btn").style.display = "inline-block"; // Mostrar el botón "Cargar más"
+      });
+    </script>
+    <script>
+      document.getElementById("load-less-btn").style.display = "none"; // Ocultar el botón "Cargar menos" inicialmente
+    </script>
+    <script>
+      new Glide('.glide', {
+        type: 'carousel',
+        startAt: 0,
+        perView: 3
+      })
+    </script>
+  </body>
+</html>

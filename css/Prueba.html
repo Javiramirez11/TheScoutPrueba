@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>The Scout</title>
+    <style>
+        .container .content p {
+            display: none;
+        }
+
+        .container .content.show-more p {
+            display: block;
+        }
+
+        .container .load-more-btn,
+        .container .load-less-btn {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <p>Contenido adicional que se ocultará.</p>
+        <p>Más contenido adicional que se ocultará.</p>
+        <button class="load-more-btn">Cargar más</button>
+        <button class="load-less-btn">Cargar menos</button>
+    </div>
+</div>
+
+</body>
+</html>
